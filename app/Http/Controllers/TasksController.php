@@ -62,7 +62,7 @@ class TasksController extends Controller
             'content' => $request->content,
         ]);
         
-        return back();
+        return redirect('/');
     }
 
     /**
@@ -100,7 +100,7 @@ class TasksController extends Controller
             ]);
         }
         
-        return ridirect('/');
+        return redirect('/');
     }
 
     /**
@@ -139,6 +139,6 @@ class TasksController extends Controller
             $task->delete();
         }
         
-        return ridirect('/');
+        return redirect('/');
     }
 }
